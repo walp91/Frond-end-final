@@ -1,0 +1,39 @@
+<!-- <body> -->
+<div class="container">
+<br>
+<br>
+<br>
+<br>
+<!-- <br>
+<br> -->
+<br>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+      </form>
+      <form class="login-form">
+        <div>
+          <input type="text" name="email" placeholder="correo electronico" [(ngModel)]="email"  
+          [ngModelOptions]="{standalone: true}"
+          aria-describedby="emailHelp"/>
+        </div>
+        <div>
+          <input type="password" name="contrasena" placeholder="contraseña" 
+          [(ngModel)]="password" [ngModelOptions]="{standalone: true}" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+        <br />
+        <br />
+        <p class="message">No estas registrado?</p>
+        <button type="submit" class="btn btn-primary" (click)="goRegister()">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- </body> -->
+

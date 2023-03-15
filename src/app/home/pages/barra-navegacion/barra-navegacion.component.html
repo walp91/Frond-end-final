@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <a class="logo">
+                <img src="../../../../assets/imagenes/logo.png" alt="Logo de la página">
+            </a>
+
+            <ul class="navbar-nav">
+                <li routerLink="" class="nav-item nav-link" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}">Hombre</li>
+                <li routerLink="mujer" class="nav-item nav-link" routerLinkActive="active">Mujer</li>
+                <li routerLink="producto/:id" class="nav-item nav-link" routerLinkActive="active">Productos</li>
+            </ul>
+
+        </div>
+
+        <div>
+            <button class="btn btn-light" *ngIf="!verLogout" (click)="logout()">Cerrar sesion</button>
+            <button class="btn btn-light" *ngIf="!verLogin" (click)="goLogin()">Ingresar</button>
+        </div>
+    </div>
+
+</nav>
+
+<hr>
+
+<div *ngIf="hayError" class="alert alert-danger">
+    No se encontró ningun producto relacionado
+    {{termino}}
+</div>
+
+<div *ngIf="!hayError" class="row">
+    <div class="col">
+    </div>
+</div>

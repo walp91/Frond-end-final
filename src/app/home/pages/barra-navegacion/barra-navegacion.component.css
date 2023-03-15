@@ -1,0 +1,26 @@
+.navbar-expand-lg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  margin-right: 550px;
+}
+
+li {
+    cursor: pointer
+}
+
+.btn-primary {
+  text-align: left;
+}
+
